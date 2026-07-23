@@ -8,12 +8,15 @@ function voltear(card) {
         contador++;
 
 
+
         const contadorElemento = document.getElementById("contadorLetras");
         if (contadorElemento) {
             contadorElemento.textContent = contador;
         }
 
     }
+
+
 
 }
 
