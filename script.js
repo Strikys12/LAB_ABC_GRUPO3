@@ -21,17 +21,17 @@ function filtrar(tipo) {
     const cards = document.querySelectorAll('.card');
 
     cards.forEach(card => {
-        // Leemos el data-tipo de la tarjeta ('vocal' o 'consonante')
+
         const tipoCard = card.dataset.tipo;
 
         if (tipo === 'todas') {
-            card.style.display = 'flex'; // Muestra todas las letras
+            card.style.display = 'flex';
         } else if (tipo === 'vocales') {
-            // Muestra SOLO si el atributo es estrictamente 'vocal'
+
             if (tipoCard === 'vocal') {
                 card.style.display = 'flex';
             } else {
-                card.style.display = 'none'; // Oculta las consonantes
+                card.style.display = 'none';
             }
         }
     });
